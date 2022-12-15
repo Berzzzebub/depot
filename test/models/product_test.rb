@@ -72,4 +72,15 @@ http://a.b.c/x/y/z/fred.gif }
     assert product.invalid?
     assert_equal ["has already been taken"], product.errors[:title]
   end
+
+  test 'product title has to be minimum 10' do
+    product = Product.new(title: 'Seven',
+                          description: "yyy",
+                          price: 1,
+                          image_url: "fred.gif")
+    assert product.invalid?
+
+    product = products(:ruby)
+    assert product.valid?
+  end
 end
