@@ -21,7 +21,11 @@
         content: " ";
         display: block;
       }
-
+      button {
+        background: none;
+        border: none;
+        display: contents;
+      }
       img {
         float: left;
         padding: 1em;

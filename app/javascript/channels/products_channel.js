@@ -15,6 +15,6 @@ consumer.subscriptions.create("ProductsChannel", {
     console.log('Data', data)
     let storeElement = document.querySelector("main.store")
     if(storeElement)
-      storeElement.innerHTML = data
+      storeElement.innerHTML = data.html
   }
 });
