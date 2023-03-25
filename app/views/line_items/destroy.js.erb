@@ -1,6 +1,0 @@
-cart = document.getElementById("cart")
-<% if @cart.line_items.any? %>
-cart.innerHTML = "<%= j render(@cart) %>"
-<% else %>
-cart.innerHTML = ""
-<% end %>
